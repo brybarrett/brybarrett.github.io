@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Bryan Barrett • Revenue Architect</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -41,9 +41,11 @@
       align-items: center;
       scroll-behavior: smooth;
       transition: background 0.4s ease, color 0.4s ease;
+      text-align: center;
+      padding: 1rem;
     }
     h1 {
-      font-size: clamp(2.2rem, 6vw, 3.5rem);
+      font-size: clamp(2.5rem, 6vw, 4rem);
       font-weight: 700;
       line-height: 1.1;
       margin-bottom: .5rem;
@@ -60,10 +62,8 @@
       font-size: 1rem;
       color: var(--subtext);
       line-height: 1.6;
-      margin-bottom: 1.1rem;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0 auto 1.25rem;
+      max-width: 700px;
     }
     a {
       color: var(--accent);
@@ -75,7 +75,7 @@
       border: 1px solid var(--accent);
       border-radius: 6px;
       transition: .25s;
-      margin: 0.5rem;
+      margin: .5rem .25rem;
     }
     .btn:hover {
       background: var(--accent);
@@ -85,18 +85,15 @@
       position: fixed;
       top: 1rem;
       right: 1rem;
-      z-index: 10;
+      z-index: 100;
     }
     section {
       padding: 4.5rem 1.2rem;
       width: 100%;
       max-width: 900px;
-      text-align: center;
       opacity: 0;
       transform: translateY(40px);
       transition: opacity .6s ease, transform .6s ease;
-      margin-left: auto;
-      margin-right: auto;
     }
     section.reveal {
       opacity: 1;
@@ -128,7 +125,6 @@
       padding: 2rem;
       color: var(--subtext);
       font-size: .9rem;
-      text-align: center;
     }
   </style>
 </head>
